@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Pip
-        run: python -m ensurepip
+        run: python3 -m ensurepip
       # - name: Setup Python
       #   id: python-install
       #   uses: actions/setup-python@v5
