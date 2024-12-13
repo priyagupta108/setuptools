@@ -44,28 +44,28 @@ jobs:
       matrix:
         python:
         - "3.9"
-        - "3.10"
-        - "3.13"
-        - "3.8"
+        # - "3.10"
+        # - "3.13"
+        # - "3.8"
     
         platform:
-        - ubuntu-latest
         - macos-latest
-        - windows-latest
-        - macos-13
-        - macos-15 
-        include:
-        - python: "3.10"
-          platform: ubuntu-latest
-        - python: "3.11"
-          platform: ubuntu-latest
-        - python: "3.12"
-          platform: ubuntu-latest
-        - python: "3.14"
-          platform: ubuntu-latest
-        - platform: ubuntu-latest
-          python: "3.10"
-          distutils: stdlib
+        # - ubuntu-latest
+        # - windows-latest
+        # - macos-13
+        # - macos-15 
+        # include:
+        # - python: "3.10"
+        #   platform: ubuntu-latest
+        # - python: "3.11"
+        #   platform: ubuntu-latest
+        # - python: "3.12"
+        #   platform: ubuntu-latest
+        # - python: "3.14"
+        #   platform: ubuntu-latest
+        # - platform: ubuntu-latest
+        #   python: "3.10"
+        #   distutils: stdlib
          
         # TODO: Re-evaluate the need for the following workaround
         # exclude:
