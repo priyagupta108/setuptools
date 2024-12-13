@@ -85,7 +85,7 @@ jobs:
       #   run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
-        uses: actions/setup-python@v5 
+        uses: actions/setup-python@v4 
         # uses: priyagupta108/setup-python@create_release 
         with:
           python-version: ${{ matrix.python }}
