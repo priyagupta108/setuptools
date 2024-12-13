@@ -78,15 +78,16 @@ jobs:
       - uses: actions/checkout@v4
       # - name: Install Pip
       #   run: python3 -m ensurepip
-      - name: Reinstall Setuptools
-        run: python -m pip install --upgrade --force-reinstall setuptools
-      - name: Print Setuptools Version
-        run: python -m pip show setuptools
+      # - name: Reinstall Setuptools
+      #   run: python -m pip install --upgrade --force-reinstall setuptools
+      # - name: Print Setuptools Version
+      #   run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
-        uses: priyagupta108/setup-python@create_release 
+        uses: actions/setup-python@v5 
+        # uses: priyagupta108/setup-python@create_release 
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
       
-          token: ${{ secrets.GITHUB_TOKEN }}
+         
