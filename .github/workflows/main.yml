@@ -40,11 +40,14 @@ jobs:
   test:
     strategy:
       # https://blog.jaraco.com/efficient-use-of-ci-resources/
+      fail-fast: true 
       matrix:
         python:
         - "3.9"
+        - "3.10"
         - "3.13"
         - "3.8"
+    
         platform:
         - ubuntu-latest
         - macos-latest
