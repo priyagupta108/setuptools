@@ -89,4 +89,4 @@ jobs:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
       
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
