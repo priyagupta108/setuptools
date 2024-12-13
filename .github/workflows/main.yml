@@ -53,6 +53,7 @@ jobs:
         - macos-latest
         - windows-latest
         - macos-13
+        - macos-15 
         include:
         - python: "3.10"
           platform: ubuntu-latest
