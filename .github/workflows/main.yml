@@ -79,8 +79,7 @@ jobs:
       # - name: Install Pip
       #   run: python3 -m ensurepip
       - name: Print Setuptools Version
-        run: python -c "import setuptools; print(setuptools.__version__)"
-     
+        run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
         uses: actions/setup-python@v5
