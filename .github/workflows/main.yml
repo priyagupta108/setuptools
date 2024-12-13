@@ -65,8 +65,6 @@ jobs:
         - platform: ubuntu-latest
           python: "3.10"
           distutils: stdlib
-        - platform: macos-13
-          python: "3.9"
          
         # TODO: Re-evaluate the need for the following workaround
         # exclude:
