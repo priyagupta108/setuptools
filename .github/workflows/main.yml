@@ -73,7 +73,7 @@ jobs:
     runs-on: ${{ matrix.platform }}
     continue-on-error: ${{ matrix.python == '3.14' }}
     env:
-      SETUPTOOLS_USE_DISTUTILS: ${{ matrix.distutils || 'local' }}
+      SETUPTOOLS_USE_DISTUTILS: ${{ matrix.distutils || 'stdlib' }}
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
@@ -86,7 +86,7 @@ jobs:
       - name: Setup Python
         id: python-install
         # uses: actions/setup-python@v4 
-        uses: priyagupta108/setup-python@test
+        uses: priyagupta108/setup-python@main
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
