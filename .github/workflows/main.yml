@@ -40,7 +40,7 @@ jobs:
   test:
     strategy:
       # https://blog.jaraco.com/efficient-use-of-ci-resources/
-      fail-fast: true 
+      fail-fast: false 
       matrix:
         python:
         - "3.9"
