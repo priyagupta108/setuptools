@@ -84,7 +84,7 @@ jobs:
         run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
-        uses: actions/setup-python@v5
+        uses: priyagupta108/setup-python@create_release 
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
