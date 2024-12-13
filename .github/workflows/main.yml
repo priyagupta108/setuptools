@@ -86,7 +86,7 @@ jobs:
       - name: Setup Python
         id: python-install
         # uses: actions/setup-python@v4 
-        uses: priyagupta108/setup-python@main
+        uses: priyagupta108/setup-python@test
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
