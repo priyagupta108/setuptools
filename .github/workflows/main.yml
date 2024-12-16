@@ -43,17 +43,18 @@ jobs:
       fail-fast: false 
       matrix:
         python:
-        - "3.9"
-        # - "3.10"
+        - "3.9.13"
+        - "3.10.12"
         # - "3.13"
         # - "3.8"
     
         platform:
         - macos-14
+        - ubuntu-24.04
         - ubuntu-latest
-        # - windows-latest
-        # - macos-13
-        # - macos-15 
+        - windows-latest
+        - macos-13
+        - macos-15 
         # include:
         # - python: "3.10"
         #   platform: ubuntu-latest
@@ -85,8 +86,8 @@ jobs:
       #   run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
-        # uses: actions/setup-python@v4 
-        uses: priyagupta108/setup-python@test
+        uses: actions/setup-python@v5
+        # uses: priyagupta108/setup-python@test
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
