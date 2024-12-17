@@ -43,7 +43,7 @@ jobs:
       fail-fast: false 
       matrix:
         python:
-        - "3.9.12"
+        - "3.9.13"
         # - "3.10.12"
         # - "3.11.0"
         # - "3.13"
@@ -85,8 +85,8 @@ jobs:
         run: python -m pip show setuptools
       - name: Setup Python
         id: python-install
-        uses: actions/setup-python@v5
-        # uses: priyagupta108/setup-python@test
+        # uses: actions/setup-python@v5
+        uses: priyagupta108/setup-python@test
         with:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
