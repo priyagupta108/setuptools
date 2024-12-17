@@ -43,14 +43,14 @@ jobs:
       fail-fast: false 
       matrix:
         python:
-        - "3.9.13"
+        - "3.9.12"
         # - "3.10.12"
         # - "3.11.0"
         # - "3.13"
         # - "3.8"
     
         platform:
-        - macos-14
+        - macos-latest
         - ubuntu-24.04
         - ubuntu-latest
         - windows-latest
