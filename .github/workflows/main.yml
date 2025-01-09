@@ -78,4 +78,4 @@ jobs:
           python-version: ${{ matrix.python }}
           allow-prereleases: true
         env:
-         SETUPTOOLS_USE_DISTUTILS: ${{ matrix.platform == 'macos-latest' && matrix.python == '3.9' && 'local' || matrix.distutils || 'local' }}
+         SETUPTOOLS_USE_DISTUTILS: ${{ matrix.platform == 'macos-latest' && matrix.python == '3.9' && 'stdlib' || matrix.distutils || 'local' }}
