@@ -79,3 +79,10 @@ jobs:
           allow-prereleases: true
         env:
          SETUPTOOLS_USE_DISTUTILS: ${{ matrix.platform == 'macos-latest' && matrix.python == '3.9' && 'stdlib' || matrix.distutils || 'local' }}
+      - uses: actions/cache@v4
+        id: cache
+        with:
+          path: setuptools/tests/config/downloads/*.cfg
+          key: >-
+            ${{ hashFiles('setuptools/tests/config/setupcfg_examples.txt') }}-
+            ${{ hashFiles('setuptools/tests/config/downloads/*.py') }}
