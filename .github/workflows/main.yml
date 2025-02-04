@@ -51,7 +51,7 @@ jobs:
         include:
         - python: "3.10.15"
           platform: ubuntu-latest
-        - python: "3.11"
+        - python: "3.11.10"
           platform: ubuntu-latest
         - python: "3.12"
           platform: ubuntu-latest
