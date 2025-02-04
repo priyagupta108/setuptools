@@ -49,9 +49,9 @@ jobs:
         - macos-latest
         - windows-latest
         include:
-        - python: "3.10.15"
+        - python: "3.10.0"
           platform: ubuntu-latest
-        - python: "3.11.10"
+        - python: "3.11.0"
           platform: ubuntu-latest
         - python: "3.12"
           platform: ubuntu-latest
