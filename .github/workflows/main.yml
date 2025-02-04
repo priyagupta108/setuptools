@@ -44,8 +44,9 @@ jobs:
         python:
         - "3.10"
         
-        - "3.11"
+        - "3.11.8"
         
+       
         platform:
         - ubuntu-latest
         - macos-latest
